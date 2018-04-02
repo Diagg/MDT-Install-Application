@@ -30,6 +30,20 @@ Function CheckConditions
 End Function
 
 
+Function StandAloneCustomAction
+
+	oLogging.CreateEntry "begin Processing Stand alone custom Actions !", LogTypeInfo
+	
+	'oLogging.CreateEntry "Disabling Remote registry service ! ", LogTypeInfo
+	'Manage_Services "RemoteRegistry", "Disabled", "Stopped"
+
+	oLogging.CreateEntry "Finished Processing Custom Actions ! ", LogTypeInfo
+	
+End Function
+
+
+
+
 
 Function ActionsBeforeInstall
 
