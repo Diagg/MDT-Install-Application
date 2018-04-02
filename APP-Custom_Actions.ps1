@@ -57,6 +57,16 @@ IF ($args[0]="CheckConditions")
 	}
 
 
+#== Calling Stand Alone custom actions
+IF ($args[0]="StandAloneCustomAction")
+	{
+		Log-ScriptEvent -value "Entering Stand Alone custom actions Section !"  -Component $Global:CurrentScriptName -Severity  1 -OutToConsole $False
+	
+		Log-ScriptEvent -value "Stand Alone custom actions Section completed !"  -Component $Global:CurrentScriptName -Severity  1 -OutToConsole $False	
+	}
+
+
+
 #== Calling custom actions before installation
 IF ($args[0]="ActionsBeforeInstall")
 	{
